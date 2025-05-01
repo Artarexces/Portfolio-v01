@@ -1,9 +1,9 @@
 import React from 'react'
 
-const skills = () => {
+const Skills = () => {
     return (
         <section id='Skills' className='skills-section'>
-            <h2>Skills & Learning</h2>
+            <h2>Skills</h2>
             <div className='skills-container'>
                 <div className='skills'>
                     <h3>Front-end Skills</h3>
@@ -56,7 +56,6 @@ const skills = () => {
 
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
 
-
                     </div>
                 </div>
             </div>
@@ -65,4 +64,4 @@ const skills = () => {
     )
 }
 
-export default skills
+export default Skills

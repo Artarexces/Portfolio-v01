@@ -1,11 +1,12 @@
 import React from 'react'
+import portfoliov1 from "./assets/portfoliov1.png"
 
-const projects = () => {
+const Projects = () => {
     return (
         <section id='projects' className='projects-container'>
             <h2 className='project-title'>Projects</h2>
             <div className='project-card fade-in'>
-                <img src="https://m.media-amazon.com/images/M/MV5BMzU3OTk2NzQtNzBhNC00YWU5LTlhYTctYWI5MDkyZDQxNGQwXkEyXkFqcGc@._V1_.jpg" alt="Miniatura del projecto" className="project-thumbnail" />
+                <img src={portfoliov1} alt="Miniatura del projecto" className="project-thumbnail" />
                 <h3>Mi Portfolio</h3>
                 <p>Este es el portfolio que se esta mostrando actualmente. Un projecto desarollado con React y puro CSS</p>
                 <div className='project-tech'>
@@ -24,7 +25,7 @@ const projects = () => {
                 </div>
                 <div className='project-links'>
                     <a href="#" target='_blank'>Ver projecto</a>
-                    <a href="#" target='_blank'>Ver codigo</a>
+                    <a href="https://github.com/Artarexces/Portfolio-v01" target='_blank'>Ver codigo</a>
                 </div>
             </div>
 
@@ -55,4 +56,4 @@ const projects = () => {
     )
 }
 
-export default projects
+export default Projects
