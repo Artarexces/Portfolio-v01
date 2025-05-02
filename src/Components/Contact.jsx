@@ -6,6 +6,11 @@ const copyEmail = () => {
     alert("Email copiado en el portapapeles");
 };
 
+const handleSubmit = async (e) => {
+
+
+}
+
 const Contact = () => {
     return (
         <section id='contact' className='contact-container'>

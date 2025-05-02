@@ -32,7 +32,7 @@ const Header = () => {
 
     return (
         <header className='header'>
-            <div id='about' className='header-contet'>
+            <div id='about' className='header-content'>
                 <h1>Hola, soy Martin</h1>
                 <h2>Desarollador <span>{text}</span></h2>
                 <p className="about-me">

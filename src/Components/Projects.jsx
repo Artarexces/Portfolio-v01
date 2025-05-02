@@ -1,5 +1,6 @@
 import React from 'react'
 import portfoliov1 from "./assets/portfoliov1.png"
+import foodRecipe from "./assets/foodRecipe.png"
 
 const Projects = () => {
     return (
@@ -30,7 +31,7 @@ const Projects = () => {
             </div>
 
             <div className='project-card fade-in'>
-                <img src="https://www.monitornutricional.com/wp-content/uploads/2024/09/manzana-512.png" alt="Miniatura del projecto" className="project-thumbnail" />
+                <img src={foodRecipe} alt="Miniatura del projecto" className="project-thumbnail" />
                 <h3>Cocinando tu receta!</h3>
                 <p>Una app simple en la cual puedes elegir alimentos y conbinarlos para crear tu propia receta y darle un nombre, tambien da un puntaje nutricional. Este fue uno de mis primeros proyectos en la UTN. </p>
                 <div className='project-tech'>
