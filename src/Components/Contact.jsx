@@ -1,30 +1,65 @@
-import React from 'react'
+import React, { useState } from 'react'
 
+const API_URL = import.meta.env.VITE_API_URL;
 
 const copyEmail = () => {
     navigator.clipboard.writeText("martinrodriguezdev96@gmail.com");
     alert("Email copiado en el portapapeles");
 };
 
-const handleSubmit = async (e) => {
 
-
-}
 
 const Contact = () => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    })
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch(`${API_URL}/contact`, {
+                method: "POST",
+                headers: { "content-type": "application/json", },
+                body: JSON.stringify(formData)
+            });
+
+            if (result.success) {
+                alert("Mensaje enviado con exito!")
+                setFormData({ name: "", email: "", message: "" })
+            } else {
+                alert("Hubo un error, intenta nuevamente.")
+            }
+
+            const result = await response.json();
+        } catch (error) {
+            console.error("Error en el envio datos", error)
+            alert("Error en el servidor")
+        }
+    }
+
     return (
         <section id='contact' className='contact-container'>
             <h2 className='contact-title'>Contacto</h2>
 
-            <form className='contact-form'>
+            <form onSubmit={handleSubmit} className='contact-form'>
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name='name' required />
+                <input type="text" id="name" name='name' value={formData.name} onChange={handleChange} required />
 
                 <label for="email">Email:</label>
-                <input type="email" id='email' name='email' required />
+                <input type="email" id='email' name='email' value={formData.email} onChange={handleChange} required />
 
                 <label for="message">Mensaje:</label>
-                <textarea name="message" id="message" rows="4" required></textarea>
+                <textarea name="message" id="message" rows="4" value={formData.message} onChange={handleChange} required></textarea>
 
                 <button type='submit' className='submit-btn'>Enviar</button>
             </form>
