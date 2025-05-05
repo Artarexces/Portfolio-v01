@@ -7,14 +7,14 @@ const copyEmail = () => {
     alert("Email copiado en el portapapeles");
 };
 
-
+const API_URL = import.meta.env.VITE_API_URL
 
 const Contact = () => {
 
     const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: ""
+        name: " ",
+        email: " ",
+        message: " "
     })
 
     const handleChange = (e) => {
@@ -27,19 +27,20 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(import.meta.env.VITE_API_URL, {
+            const response = await fetch(`${API_URL}/api/contact`, {
                 method: "POST",
-                headers: { "content-type": "application/json", },
+                headers: { "Content-Type": "application/json", },
                 body: JSON.stringify(formData),
             });
 
             const result = await response.json();
+            console.log("Resultado:", result)
 
             if (response.ok) {
                 alert("Mensaje enviado con exito!")
                 setFormData({ name: "", email: "", message: "" })
             } else {
-                alert("Hubo un error, intenta nuevamente.")
+                alert(`Error: ${result.error || "Intente nuevamente "}`)
             }
 
 
