@@ -1,9 +1,9 @@
+import dotenv from "dotenv"     
 import mongoose from "mongoose";
-import dotenv from "dotenv"
-
 dotenv.config();
 
-const URI_DB = process.env.URI_DB || ""
+const URI_DB = process.env.URI_DB;
+
 
 export const connectDB = async () => {
     try {

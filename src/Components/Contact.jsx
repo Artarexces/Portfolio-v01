@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const API_URL = import.meta.env.VITE_API_URL;
+
 
 const copyEmail = () => {
     navigator.clipboard.writeText("martinrodriguezdev96@gmail.com");
@@ -27,20 +27,22 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`${API_URL}/contact`, {
+            const response = await fetch(import.meta.env.VITE_API_URL, {
                 method: "POST",
                 headers: { "content-type": "application/json", },
-                body: JSON.stringify(formData)
+                body: JSON.stringify(formData),
             });
 
-            if (result.success) {
+            const result = await response.json();
+
+            if (response.ok) {
                 alert("Mensaje enviado con exito!")
                 setFormData({ name: "", email: "", message: "" })
             } else {
                 alert("Hubo un error, intenta nuevamente.")
             }
 
-            const result = await response.json();
+
         } catch (error) {
             console.error("Error en el envio datos", error)
             alert("Error en el servidor")
