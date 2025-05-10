@@ -164,6 +164,7 @@ h3 {
     flex-direction: column;
 }
 
+
 .project-title{
     text-align: center;
     margin-top: 80px;
@@ -237,6 +238,10 @@ h3 {
     height: 30px;
 }
 
+.project-tech img:hover {
+    transform: scale(1.2);
+}
+
 .project-links {
     margin-top: 20px;
     display: flex;
@@ -257,6 +262,7 @@ h3 {
 
 .project-links a:hover {
     background: #9c86bd;
+    transform: scale(1.1);
 }
 
 /* CONTACT  */
