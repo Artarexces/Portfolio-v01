@@ -44,6 +44,7 @@ body {
 
 .navbar a:hover {
     color: #9c86bd;
+    transform: scale(1.2);
 }
 
 /* BOTON OSCURO */
@@ -64,6 +65,10 @@ body {
     height: 35px;
     transition: ease-in-out;
     cursor: pointer;
+}
+
+.dark-mode-btn:hover{
+    transform: scale(1.1);
 }
 
 .dark {
