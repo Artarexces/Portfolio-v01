@@ -27,4 +27,4 @@ userSchema.set("strict", true)
 
 const UserModel = model<UserInterface>('user', userSchema)
 
-export { UserInput, UserInterface, UserModel }
+export { UserInput, UserInterface, UserModel, model }
