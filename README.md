@@ -67,26 +67,26 @@ Muestra mis habilidades, proyectos y datos de contacto, con modo oscuro/Claro y 
 ---
 
 ## 📂 Estructura de carpetas
-Portfolio-v01/
-│ 
-├── src/
-│ ├── assets/ # imágenes y archivos estáticos
-│ ├── components/
-│ │ ├── Header.jsx
-│ │ ├── Navbar.jsx
-│ │ ├── Skills.jsx
-│ │ ├── Projects.jsx
-│ │ ├── Contact.jsx
-│ │ ├── Footer.jsx
-│ │ └── DarkModeToggle.jsx
-│ ├── styles/ # archivos CSS por componente
-│ ├── App.jsx
-│ └── main.jsx
-├── index.html
-├── .gitignore
-├── package.json
-├── vite.config.js
-└── README.md
+Portfolio-v01/   
+│  
+├── src/  
+│ ├── assets/   
+│ ├── components/  
+│ │ ├── Header.jsx  
+│ │ ├── Navbar.jsx  
+│ │ ├── Skills.jsx  
+│ │ ├── Projects.jsx  
+│ │ ├── Contact.jsx  
+│ │ ├── Footer.jsx  
+│ │ └── DarkModeToggle.jsx  
+│ ├── styles/   
+│ ├── App.jsx  
+│ └── main.jsx  
+├── index.html  
+├── .gitignore  
+├── package.json  
+├── vite.config.js  
+└── README.md  
 
 ---
 
