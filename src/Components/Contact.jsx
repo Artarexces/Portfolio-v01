@@ -7,14 +7,14 @@ const copyEmail = () => {
     alert("Email copiado en el portapapeles");
 };
 
-const API_URL = import.meta.env.VITE_API_URL
+const API_URL = `${import.meta.env.VITE_API_URL}/contacto`;
 
 const Contact = () => {
 
     const [formData, setFormData] = useState({
-        name: " ",
-        email: " ",
-        message: " "
+        name: "",
+        email: "",
+        message: ""
     })
 
     const handleChange = (e) => {

@@ -1,30 +1,21 @@
-import mongoose,{ Document , Schema, model} from "mongoose"
+import mongoose,{ Schema, model} from "mongoose"
 
 
-interface UserInterface extends Document {
-    name: String,
-    email: String, 
-    message: String,
-    createdAt: Date
-}
-
-interface UserInput {
+interface UserI {
     name: String,
     email: String, 
     message: String,
 }
 
 
-const userSchema: Schema = new Schema<UserInterface>({
+const userSchema: Schema = new Schema<UserI>({
     name:{ type:String, required:true },
     email:{ type:String, required:true, unique:true },
     message:{ type:String, required:true },
-    createdAt:{ type:Date, default:Date.now }
 })
 
 
 userSchema.set("strict", true) 
 
-const UserModel = model<UserInterface>('user', userSchema)
+export const UserModel = model<UserI>('User', userSchema)
 
-export { UserInput, UserInterface, UserModel, model }
