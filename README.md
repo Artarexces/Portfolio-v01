@@ -7,19 +7,22 @@ Muestra mis habilidades, proyectos y datos de contacto, con modo oscuro/Claro y 
 
 ## 🚀 Demo
 
-> Vista en vivo: _(reemplaza con tu URL desplegada)_
 
 ---
 
 ## 📋 Índice
 
+
 1. [Características](#-características)  
 2. [Tecnologías](#-tecnologías)  
-3. [Estructura de carpetas](#-estructura-de-carpetas)  
-4. [Instalación y uso](#-instalación-y-uso)  
-5. [Scripts disponibles](#-scripts-disponibles)  
-6. [Contribuciones](#-contribuciones)  
-7. [Licencia](#-licencia)  
+3. [Estructura de carpetas (Front)](#-estructura-de-carpetas-front)  
+4. [Instalación y uso (Front)](#-instalación-y-uso-front)  
+5. [Scripts disponibles (Front)](#-scripts-disponibles-front)  
+6. [Servidor (Back-end)](#-servidor-back-end)  
+   - [Tecnologías Back-end](#tecnologías-back-end)  
+   - [Arquitectura del servidor](#arquitectura-del-servidor)  
+   - [Scripts del servidor](#scripts-del-servidor)  
+7. [Contribuciones](#-contribuciones)  
 
 ---
 
@@ -30,8 +33,7 @@ Muestra mis habilidades, proyectos y datos de contacto, con modo oscuro/Claro y 
   - Menú colapsable en pantallas pequeñas.
 
 - **Header animado**  
-  - Texto “Hola, soy Martín” con efecto de máquina de escribir alternando “Front-end”, “Back-end”, “Full-stack”.  
-  - Botón para descargar CV.
+  - Texto “Hola, soy Martín” con efecto de máquina de escribir alternando “Front-end”, “Back-end”, “Full-stack”.
 
 - **Modo oscuro/Claro**  
   - Tema persistente con `useState` + `useEffect`.  
@@ -57,12 +59,20 @@ Muestra mis habilidades, proyectos y datos de contacto, con modo oscuro/Claro y 
 
 ## 🛠️ Tecnologías
 
-- **Framework:** React (Vite)  
-- **Lenguaje:** JavaScript (ES6+)  
-- **Estilos:** CSS puro  
-- **Íconos:** Devicon, FontAwesome  
-- **Bundler:** Vite  
-- **Linting:** ESLint  
+**Front-end**  
+- React (Vite)  
+- JavaScript (ES6+)  
+- CSS puro  
+- Devicon, FontAwesome  
+- Vite, ESLint  
+
+**Back-end**  
+- Node.js  
+- TypeScript  
+- Express  
+- MongoDB  
+- Mongoose  
+- CORS  
 
 ---
 
@@ -90,7 +100,7 @@ Portfolio-v01/
 
 ---
 
-## 📥 Instalación y uso
+## 📥 Instalación y uso (Front)
 
 1. **Clona el repositorio**  
    ```bash
@@ -106,7 +116,7 @@ Portfolio-v01/
 3. **Ejecuta en desarrollo**  
    ```bash
    npm run dev
-   Abre en http://localhost:3000 por defecto.
+   Abre en http://localhost:4000 por defecto.
 
 4. **Genera build de producción**  
    ```bash
@@ -121,6 +131,48 @@ Portfolio-v01/
 - `npm run preview` – Previsualiza el build
 
 ---
+
+## 🖥️ Servidor (Back-end)
+
+> ⚠️ **Nota:** El front-end aún está en construcción y pronto se conectará a esta API.
+
+### Tecnologías Back-end
+
+- Node.js  
+- TypeScript  
+- Express  
+- MongoDB  
+- Mongoose  
+- CORS  
+
+## 📂 Estructura de carpetas
+
+server/  
+├── dist/            
+├── node_modules/  
+├── src/  
+│   ├── config/  
+│   │   └── mongo.config.ts       
+│   ├── model/  
+│   │   └── user.model.ts        
+│   ├── routes/  
+│   │   └── user.routes.ts      
+│   └── index.ts     
+├── .env  
+├── package.json  
+├── package-lock.json  
+└── tsconfig.json  
+
+---
+
+## Scripts del servidor
+
+- `npm run dev` – Ejecuta el servidor en modo desarrollo (con nodemon)  
+- `npm run build` – Compila TypeScript y genera JS en la carpeta `dist/`  
+- `npm run start` – Ejecuta el servidor en producción desde `dist/index.js`  
+
+---
+
 
 ## 🤝 Contribuciones
 
