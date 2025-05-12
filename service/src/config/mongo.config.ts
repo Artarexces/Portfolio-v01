@@ -5,7 +5,7 @@ process.loadEnvFile();
 const URI_DB = process.env.URI_DB || ""
 
 
-const connectDB = async () => {
+export const connectDB = async () => {
 try {
     await mongoose.connect(URI_DB)
     console.log("Conectado con exito a mongoDB")
@@ -14,4 +14,3 @@ try {
 }
 }
 
-export { connectDB }

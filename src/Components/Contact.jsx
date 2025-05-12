@@ -7,7 +7,7 @@ const copyEmail = () => {
     alert("Email copiado en el portapapeles");
 };
 
-const API_URL = `${import.meta.env.VITE_API_URL}/contacto`;
+const API_URL = "http://localhost:4000/api/contacto";  // ruta de la api
 
 const Contact = () => {
 
@@ -36,15 +36,12 @@ const Contact = () => {
 
             const result = await response.json();
             console.log("Resultado:", result)
-
             if (response.ok) {
                 alert("Mensaje enviado con exito!")
                 setFormData({ name: "", email: "", message: "" })
             } else {
                 alert(`Error: ${result.error || "Intente nuevamente "}`)
             }
-
-
         } catch (error) {
             console.error("Error en el envio datos", error)
             alert("Error en el servidor")

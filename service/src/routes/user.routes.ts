@@ -1,13 +1,12 @@
 import { Router } from "express";
-import { UserModel } from "../model/user.model";
+import { contactModel } from "../model/user.model";
 
 const router = Router()
 
-router.post('/api/contact', async (req,res) => {
+router.post('/api/contacto', async (req,res) => {
     try {
-        const { name, email, message } = req.body
-        const newUser = new UserModel(req.body)
-        await newUser.save()
+        const newContact = new contactModel(req.body)
+        await newContact.save()
         res.status(200).json({success : true, message: "guardado en DB."})
     } catch (error) {
         console.error('error en guardar en la DB.' ,error)

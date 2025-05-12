@@ -12,14 +12,13 @@ app.use(express.json())
 app.use(cors({
     origin: 'http://localhost:5173',
     methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
 }))
-
-
-
-connectDB()
 
 app.use(userContact)
 
+connectDB()
+
 app.listen(PORT, () => {
-    console.log(`Connexión al servidor HTTP:${PORT} lograda con exito!`)
+    console.log(`Connexión al servidor HTTP http://localhost:${PORT} lograda con exito!`)
 })

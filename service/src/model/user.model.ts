@@ -1,21 +1,21 @@
 import mongoose,{ Schema, model} from "mongoose"
 
 
-interface UserI {
+interface Icontact {
     name: String,
     email: String, 
     message: String,
 }
 
 
-const userSchema: Schema = new Schema<UserI>({
+const contactSchema: Schema = new Schema<Icontact>({
     name:{ type:String, required:true },
     email:{ type:String, required:true, unique:true },
     message:{ type:String, required:true },
 })
 
 
-userSchema.set("strict", true) 
+contactSchema.set("strict", true) 
 
-export const UserModel = model<UserI>('User', userSchema)
+export const contactModel = model<Icontact>('Contact', contactSchema)
 
