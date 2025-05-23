@@ -1,6 +1,7 @@
 import React from 'react'
 import portfoliov1 from "./assets/portfoliov1.png"
 import foodRecipe from "./assets/foodRecipe.png"
+import WeatherImg from "./assets/WeatherImg.png"
 
 const projectData = [
     {
@@ -30,9 +31,9 @@ const projectData = [
         codeLink: "https://github.com/Artarexces/CocinandoTuReceta?tab=readme-ov-file"
     },
     {
-        title: "Mi portfolio",
-        image: portfoliov1,
-        description: "Este es el portfolio que se esta mostrando actualmente. Un projecto desarollado con React y puro CSS",
+        title: "From the wind",
+        image: WeatherImg,
+        description: "Una app de clima simple que muestra el clima y el pronostico semanal, consumiendo Weather API para obtener los climas. Projecto desarollado con React y CSS",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",

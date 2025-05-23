@@ -12,6 +12,43 @@ body {
 
 }
 
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background: linear-gradient(45deg, #eeeaea, #b6b0b0);
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1;
+    pointer-events: none;
+}
+
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -3;
+    background: linear-gradient(45deg, #121212, #301131);
+    opacity: 0.01;
+    transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
+}
+
+body.dark::before {
+    opacity: 0;
+}
+body.dark::after {
+    opacity: 1;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* NAV-BAR */
 
 .navbar {
@@ -25,6 +62,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    z-index: 2;
 }
 
 .navbar ul {
@@ -176,8 +214,9 @@ h3 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 5rem;
+    grid-auto-rows:1fr;
     justify-content: center;
     justify-items: center;
     max-width: 1000px;
@@ -195,6 +234,9 @@ h3 {
     width: 100%;
     height: auto;
     overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
