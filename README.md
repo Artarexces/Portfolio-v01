@@ -134,7 +134,6 @@ Portfolio-v01/
 
 ## 🖥️ Servidor (Back-end)
 
-> ⚠️ **Nota:** El front-end aún está en construcción y pronto se conectará a esta API.
 
 ### Tecnologías Back-end
 
