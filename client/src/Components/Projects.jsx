@@ -6,7 +6,7 @@ const projectData = [
     {
         title: "Mi portfolio",
         image: portfoliov1,
-        description: "Este es el portfolio que se esta mostrando actualmente. Un projecto desarollado con React y puro CSS",
+        description: "Este es el portfolio que se esta mostrando actualmente. Un projecto desarollado con React.JS y puro CSS",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
@@ -19,7 +19,7 @@ const projectData = [
     {
         title: "Cocinando tu receta!",
         image: foodRecipe,
-        description: "Una app simple en la cual puedes elegir alimentos y conbinarlos, tambien da un puntaje nutricional. Uno de mis primeros proyectos en la UTN.",
+        description: "Una app simple en la cual puedes elegir alimentos y conbinarlos, tambien da un puntaje nutricional.",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
