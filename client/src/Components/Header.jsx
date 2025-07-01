@@ -33,7 +33,7 @@ const Header = () => {
     return (
         <header className='header'>
             <div id='about' className='header-content'>
-                <h1>Hola, soy Martin</h1>
+                <h1>Hola, soy Martin👋</h1>
                 <h2>Desarollador <span>{text}</span></h2>
                 <p className="about-me">
                     Soy un entusiasta del desarrollo web con experiencia en HTML, CSS, JavaScript y React como tambien en Python, node.js, typescript, express y manejo de base de datos SQL y NoSql. Siempre estoy en busca de mejorar mis habilidades y explorar nuevas tecnologías.

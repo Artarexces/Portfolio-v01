@@ -1,4 +1,5 @@
 import React from 'react'
+import todo from "./assets/todo.png"
 import portfoliov1 from "./assets/portfoliov1.png"
 import foodRecipe from "./assets/foodRecipe.png"
 
@@ -19,7 +20,7 @@ const projectData = [
     {
         title: "Cocinando tu receta!",
         image: foodRecipe,
-        description: "Una app simple en la cual puedes elegir alimentos y conbinarlos, tambien da un puntaje nutricional.",
+        description: "Mi primer app, simple, en la cual puedes elegir alimentos, combinarlos + puntaje nutricional.",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
@@ -30,17 +31,17 @@ const projectData = [
         codeLink: "https://github.com/Artarexces/CocinandoTuReceta?tab=readme-ov-file"
     },
     {
-        title: "Mi portfolio",
-        image: portfoliov1,
-        description: "Este es el portfolio que se esta mostrando actualmente. Un projecto desarollado con React y puro CSS",
+        title: "To-Do-Now",
+        image: todo,
+        description: "Un task-list hecha 100% con python django, utilizando templates HTML y staticos CSS!",
         techs: [
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
         ],
-        demoLink: "#",
-        codeLink: "https://github.com/Artarexces/Portfolio-v01"
+        demoLink: "https://artarexces.pythonanywhere.com",
+        codeLink: "https://github.com/Artarexces/ToDoNow"
     },
     {
         title: "Mi portfolio",
@@ -101,7 +102,8 @@ const Projects = () => {
                         <div className="project-links">
                             <a href={project.demoLink}
                                 target='_blank'>Ver proyecto</a>
-                            <a href={project.codeLink}>Ver codigo</a>
+                            <a href={project.codeLink}
+                                target='_blank'>Ver codigo</a>
                         </div>
                     </div>
                 ))}
