@@ -11,9 +11,11 @@
     "testdb": "node server/index.js"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
     "lucide-react": "^0.476.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

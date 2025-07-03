@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+const API_URL = "http://localhost:4000/api/contacto";  // ruta de la api
 
 
 const copyEmail = () => {
@@ -7,7 +8,6 @@ const copyEmail = () => {
     alert("Email copiado en el portapapeles");
 };
 
-const API_URL = "http://localhost:4000/api/contacto";  // ruta de la api
 
 const Contact = () => {
 
@@ -53,13 +53,13 @@ const Contact = () => {
             <h2 className='contact-title'>Contacto</h2>
 
             <form onSubmit={handleSubmit} className='contact-form'>
-                <label for="name">Nombre:</label>
+                <label htmlFor="name">Nombre:</label>
                 <input type="text" id="name" name='name' value={formData.name} onChange={handleChange} required />
 
-                <label for="email">Email:</label>
+                <label htmlFor="email">Email:</label>
                 <input type="email" id='email' name='email' value={formData.email} onChange={handleChange} required />
 
-                <label for="message">Mensaje:</label>
+                <label htmlFor="message">Mensaje:</label>
                 <textarea name="message" id="message" rows="4" value={formData.message} onChange={handleChange} required></textarea>
 
                 <button type='submit' className='submit-btn'>Enviar</button>

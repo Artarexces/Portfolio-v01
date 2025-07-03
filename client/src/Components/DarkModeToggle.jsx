@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Sun, Moon } from "lucide-react"
 
+// DESMONTADO. 
+
 const DarkModeToggle = () => {
     const [darkMode, setDarkMode] = useState(() => {
         return localStorage.getItem("theme") === "dark";
