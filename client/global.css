@@ -5,9 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out ; 
-    background: linear-gradient(45deg, #eeeaea, #b6b0b0);
+    color: #a7a4a4;
     background-attachment: fixed;
     scroll-behavior: smooth;
 }

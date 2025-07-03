@@ -3,7 +3,7 @@ import { contactModel } from "../model/user.model";
 
 const router = Router()
 
-router.post('/api/contacto', async (req,res) => {
+router.post('/contacto', async (req,res) => {
     try {
         const newContact = new contactModel(req.body)
         await newContact.save()

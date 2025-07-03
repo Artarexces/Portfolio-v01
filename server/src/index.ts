@@ -15,7 +15,7 @@ app.use(cors({
     allowedHeaders: ['Content-Type']
 }))
 
-app.use(userContact)
+app.use('/api',userContact)
 
 connectDB()
 

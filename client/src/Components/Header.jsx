@@ -40,7 +40,7 @@ const Header = () => {
                         {text}
                     </span>
                 </h2>
-                <p className="about-me">
+                <p className='max-w-xl text-base leading-relaxed text-left'>
                     Soy un entusiasta del desarrollo web con experiencia en HTML, CSS, JavaScript y React como tambien en Python, node.js, typescript, express y manejo de base de datos SQL y NoSql. Siempre estoy en busca de mejorar mis habilidades y explorar nuevas tecnologías.
                 </p>
             </div>

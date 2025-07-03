@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const API_URL = "http://localhost:4000/api/contacto";  // ruta de la api
+const API_URL = `${import.meta.env.VITE_API_URL}/contacto`;
 
 
 const copyEmail = () => {
