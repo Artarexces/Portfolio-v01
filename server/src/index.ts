@@ -3,7 +3,7 @@ import cors from "cors"
 import { connectDB } from "./config/mongo.config";
 import userContact from "./routes/user.routes"
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4001
 
 const app = express()
 
