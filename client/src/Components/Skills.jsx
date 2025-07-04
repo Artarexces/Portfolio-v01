@@ -21,7 +21,7 @@ const Skills = () => {
           <div className="bg-slate-800 text-neutral-100 p-8 rounded-2xl w-72 flex flex-col items-center">
             <h3 className="text-xl font-semibold mb-6">Back-end Skills</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" className="w-14 h-14 hover:scale-110 transition-transform duration-300" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="w-12 h-12 hover:scale-110 transition-transform duration-300" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" className="w-12 h-12 hover:scale-110 transition-transform duration-300" />

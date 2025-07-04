@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaGithub, FaExternalLinkAlt} from "react-icons/fa"
 import todo from "./assets/todo.png"
 import portfoliov1 from "./assets/portfoliov1.png"
 import foodRecipe from "./assets/foodRecipe.png"
@@ -86,20 +87,20 @@ const projectData = [
 
 const Projects = () => {
     return (
-        <section id='projects' className='projects-container'>
-            <h2 className='project-title'>Projects</h2>
-            <div className="projects-grid">
+        <section id='projects' className='px-4 py-20'>
+            <h2 className='text-3xl font-bold text-center mb-10'>Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {projectData.map((project, index) => (
-                    <div className="project-card fade-in" key={index}>
-                        <img src={project.image} alt={`Miniatura de ${project.title}`} className='project-thumbnail' />
-                        <h3>{project.title}</h3>
-                        <p className='project-description'>{project.description}</p>
-                        <div className="project-tech">
+                    <div className="bg-slate-800 text-neutral-100 overflow-hidden rounded-lg flex flex-col justify-between" key={index}>
+                        <img src={project.image} alt={`Miniatura de ${project.title}`} className='h-48 w-full object-cover' />
+                        <h3 className='text-sm font-semibold text-cyan-400 mb-1'>{project.title}</h3>
+                        <p className='text-sm mb-3 text-gray-400'>{project.description}</p>
+                        <div className="flex justify-center gap-3 flex-wrap mb-4">
                             {project.techs.map((techs, i) => (
-                                <img key={i} src={techs} />
+                                <img key={i} src={techs} className="w-6 h-6" />
                             ))}
                         </div>
-                        <div className="project-links">
+                        <div className="flex justify-center gap-6 mt-auto">
                             <a href={project.demoLink}
                                 target='_blank'>Ver proyecto</a>
                             <a href={project.codeLink}
