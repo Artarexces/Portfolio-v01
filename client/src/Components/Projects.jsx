@@ -8,12 +8,11 @@ const projectData = [
     {
         title: "Mi portfolio",
         image: portfoliov1,
-        description: "Este es el portfolio que se esta mostrando actualmente. Un projecto desarollado con React.JS y puro CSS",
+        description: "Este es el portfolio que se esta mostrando actualmente. Un projecto desarollado con  React.JS, express.js y Tailwind CSS",
         techs: [
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
         ],
         demoLink: "#",
         codeLink: "https://github.com/Artarexces/Portfolio-v01"
@@ -37,7 +36,6 @@ const projectData = [
         description: "Un task-list hecha 100% con python django, utilizando templates HTML y staticos CSS!",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
         ],
@@ -91,20 +89,36 @@ const Projects = () => {
             <h2 className='text-3xl font-bold text-center mb-10'>Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {projectData.map((project, index) => (
-                    <div className="bg-slate-800 text-neutral-100 overflow-hidden rounded-lg flex flex-col justify-between" key={index}>
-                        <img src={project.image} alt={`Miniatura de ${project.title}`} className='h-48 w-full object-cover' />
-                        <h3 className='text-sm font-semibold text-cyan-400 mb-1'>{project.title}</h3>
-                        <p className='text-sm mb-3 text-gray-400'>{project.description}</p>
-                        <div className="flex justify-center gap-3 flex-wrap mb-4">
+                    <div className="bg-slate-800  rounded-lg flex flex-grow flex-col justify-between" key={index}>
+                        <img src={project.image} alt={`Miniatura de ${project.title}`} className='h-48 w-full rounded-xl blur-[2px] hover:blur-none transition duration-500 ease-in-out object-cover' />
+                        <div className="flex flex-col justify-between p-4 flex-1">
+                        <div className="flex justify-center gap-6">
+                        <h3 className='text-lg font-semibold text-cyan-400 '>{project.title}</h3>
+                            <a
+                                href={project.demoLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:brightness-110 transition"
+                                title="Ver proyecto"
+                            >
+                                <FaExternalLinkAlt className="w-5 h-5" />
+                            </a>
+                            <a
+                                href={project.codeLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:brightness-110 transition"
+                                title="Ver código"
+                            >
+                                <FaGithub className="w-5 h-5" />
+                            </a>
+                        </div>
+                        <p className='text-[16px] m-4 text-center text-gray-400'>{project.description}</p>
+                        <div className="flex justify-center gap-4 flex-wrap pt-8 mt-auto">
                             {project.techs.map((techs, i) => (
-                                <img key={i} src={techs} className="w-6 h-6" />
+                                <img key={i} src={techs} className="w-10 h-10" />
                             ))}
                         </div>
-                        <div className="flex justify-center gap-6 mt-auto">
-                            <a href={project.demoLink}
-                                target='_blank'>Ver proyecto</a>
-                            <a href={project.codeLink}
-                                target='_blank'>Ver codigo</a>
                         </div>
                     </div>
                 ))}
