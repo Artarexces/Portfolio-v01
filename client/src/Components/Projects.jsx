@@ -22,10 +22,8 @@ const projectData = [
         image: foodRecipe,
         description: "Mi primer app, simple, en la cual puedes elegir alimentos, combinarlos + puntaje nutricional.",
         techs: [
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
         ],
         demoLink: "https://cocinando-tu-receta-omega.vercel.app/",
         codeLink: "https://github.com/Artarexces/CocinandoTuReceta?tab=readme-ov-file"
@@ -91,7 +89,7 @@ const Projects = () => {
                 {projectData.map((project, index) => (
                     <div className="bg-slate-800  rounded-lg flex flex-grow flex-col justify-between" key={index}>
                         <img src={project.image} alt={`Miniatura de ${project.title}`} className='h-48 w-full rounded-xl blur-[2px] hover:blur-none transition duration-500 ease-in-out object-cover' />
-                        <div className="flex flex-col justify-between p-4 flex-1">
+                        <div className="flex flex-col justify-between p-6 flex-1">
                         <div className="flex justify-center gap-6">
                         <h3 className='text-lg font-semibold text-cyan-400 '>{project.title}</h3>
                             <a
@@ -113,10 +111,10 @@ const Projects = () => {
                                 <FaGithub className="w-5 h-5" />
                             </a>
                         </div>
-                        <p className='text-[16px] m-4 text-center text-gray-400'>{project.description}</p>
+                        <p className='text-[16px] mt-2 text-center text-gray-400'>{project.description}</p>
                         <div className="flex justify-center gap-4 flex-wrap pt-8 mt-auto">
                             {project.techs.map((techs, i) => (
-                                <img key={i} src={techs} className="w-10 h-10" />
+                                <img key={i} src={techs} className="w-12 h-12 hover:scale-110 transition duration-500 ease-in-out" />
                             ))}
                         </div>
                         </div>
