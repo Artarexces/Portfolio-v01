@@ -61,7 +61,8 @@ const projectData = [
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
         ],
         demoLink: "#",
         codeLink: "https://github.com/Artarexces/Pom's"
