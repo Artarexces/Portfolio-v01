@@ -1,5 +1,6 @@
 import React from 'react'
-import {FaGithub, FaExternalLinkAlt} from "react-icons/fa"
+import {FaGithub} from "react-icons/fa"
+import { VscVmConnect } from "react-icons/vsc";
 import portfoliov1 from "./assets/portfoliov1.png"
 import foodRecipe from "./assets/foodRecipe.png"
 import todo from "./assets/todo.png"
@@ -97,16 +98,16 @@ const Projects = () => {
                                 href={project.demoLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:brightness-110 transition"
+                                className="hover:brightness-110 hover:scale-110 transition"
                                 title="Ver proyecto"
                             >
-                                <FaExternalLinkAlt className="w-6.5 h-6.5 hover:scale-120 hover:brightness-110 transition duration-500 ease-in-out" />
+                                <VscVmConnect className="w-6.5 h-6.5 hover:scale-120 hover:brightness-110 transition duration-500 ease-in-out" />
                             </a>
                             <a
                                 href={project.codeLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:brightness-110 transition"
+                                className="hover:brightness-110 hover:scale-110 transition"
                                 title="Ver código"
                             >
                                 <FaGithub className="w-7 h-7 hover:scale-110 hover:brightness-120 transition duration-500 ease-in-out" />
