@@ -58,7 +58,7 @@ const projectData = [
     {
         title: "Pom's",
         image: pomi,
-        description: "Pom's es una app de estudio en la cual utiliza el metodo pomodoro de estudio mediante una interfaz sencilla y regulable por el usuario!",
+        description: "Una app de estudio en la cual utiliza el metodo pomodoro mediante una interfaz sencilla, tambien version app-mobile.",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
