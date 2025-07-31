@@ -49,45 +49,88 @@ const Contact = () => {
     }
 
     return (
-        <section id='contact' className='contact-container'>
-            <h2 className='contact-title'>Contacto</h2>
-
-            <form onSubmit={handleSubmit} className='contact-form'>
+        <section id='contact' className='px-4 py-16'>
+            <h2 className='text-3xl font-bold text-center mb-10'>Contacto</h2>
+            <div className='max-w-xl mx-auto bg-slate-800 p-6 rounded-lg'>
+            <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
                 <label htmlFor="name">Nombre:</label>
-                <input type="text" id="name" name='name' value={formData.name} onChange={handleChange} required />
+                <input 
+                  type="text" 
+                  id="name" 
+                  name='name' 
+                  value={formData.name} 
+                  onChange={handleChange} 
+                  required 
+                className='w-full py-2 px-4 border border-slate-700 rounded-md text-gray-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:animate-pulse' 
+                />
 
                 <label htmlFor="email">Email:</label>
-                <input type="email" id='email' name='email' value={formData.email} onChange={handleChange} required />
+                <input 
+                  type="email" 
+                  id='email' 
+                  name='email' 
+                  value={formData.email} 
+                  onChange={handleChange} 
+                  required 
+                className='w-full py-2 px-4 border border-slate-700 rounded-md text-gray-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:animate-pulse' 
+                />
 
                 <label htmlFor="message">Mensaje:</label>
-                <textarea name="message" id="message" rows="4" value={formData.message} onChange={handleChange} required></textarea>
+                <textarea 
+                  name="message" 
+                  id="message" 
+                  rows="4" 
+                  value={formData.message} 
+                  onChange={handleChange} 
+                  required 
+                className='w-full py-2 px-4 border border-slate-700 rounded-md text-gray-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:animate-pulse' 
+                />
 
-                <button type='submit' className='submit-btn'>Enviar</button>
+                <button type='submit' className='w-full py-2 px-4 border border-slate-700 bg-sky-700 hover:bg-sky-600 hover:animate-pulse transition duration-300 ease-in-out rounded-md'>Enviar</button>
             </form>
+            </div>
+            {/* Redes */}
+            <h2 className="text-3xl font-bold text-center mt-12 mb-6">Redes</h2>
+            <div className="flex flex-wrap justify-center items-center gap-6">
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/martin-rodriguez-a71748342/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-slate-700 hover:bg-slate-600 transition"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+                  alt="LinkedIn"
+                  className="w-10 h-10 rounded-lg"
+                />
+              </a>
 
-            <h2 className='contact-redes'>Redes</h2>
-            <div className='contact-links'>
-                <a href="https://www.linkedin.com/in/martin-rodriguez-a71748342/" target='_blank' rel='noopener noreferer'>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
-                </a>
+              {/* GitHub */}
+              <a
+                href="https://github.com/Artarexces"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-slate-700 hover:bg-slate-600 transition"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+                  alt="GitHub"
+                  className="w-10 h-10"
+                />
+              </a>
 
-                <a href="https://github.com/Artarexces" target="_blank" rel="noopener noreferrer">
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-
-                </a>
-
-                <div className='email-container'>
-                    <button className='copy-email' onClick={copyEmail}>
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-                            alt="Gmail"
-                            className="gmail-icon"
-                        />
-
-                    </button>
-                    <span className='copy-text'>← Copiar email</span>
-                </div>
+              {/* Copiar email */}
+              <button
+                onClick={copyEmail}
+                className="p-2 rounded-full bg-slate-700 hover:bg-slate-600 transition flex items-center"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                  alt="Gmail"
+                  className="w-10 h-10"
+                />
+              </button>
             </div>
         </section>
     )
