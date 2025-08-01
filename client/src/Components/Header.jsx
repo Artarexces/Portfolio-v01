@@ -41,7 +41,7 @@ const Header = () => {
                     </span>
                 </h2>
                 <p className='text-base sm:text-sm md:text-sm leading-relaxed max-w-xl'>
-                    Soy un entusiasta del desarrollo web con experiencia en HTML, CSS, JavaScript y React como también en Python, node.js, typescript, express y manejo de base de datos SQL y NoSql. Siempre estoy en busca de mejorar mis habilidades y explorar nuevas tecnologías.
+                    Soy un entusiasta del desarrollo web con experiencia en React.JS como también en Python(Django), Node.js(Express) y manejo de base de datos SQL y NoSql. Actualmente me encuentro incursionando en el desarrollo mobile con React Native.
                 </p>
             </div>
         </header>

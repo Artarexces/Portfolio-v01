@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const API_URL = `${import.meta.env.VITE_API_URL}/contacto`;
 
 
-const copyEmail = () => {
+export const copyEmail = () => {
     navigator.clipboard.writeText("martinrodriguezdev96@gmail.com");
     alert("Email copiado en el portapapeles");
 };
@@ -97,7 +97,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/martin-rodriguez-a71748342/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-slate-700 hover:bg-slate-600 transition"
+                className="p-2 rounded-full bg-slate-700 hover:scale-110 hover:bg-slate-600 transition duration-300 ease-in-out"
               >
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
@@ -111,7 +111,7 @@ const Contact = () => {
                 href="https://github.com/Artarexces"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-slate-700 hover:bg-slate-600 transition"
+                className="p-2 rounded-full bg-slate-700 hover:scale-110 hover:bg-slate-600 transition duration-300 ease-in-out"
               >
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
@@ -123,7 +123,7 @@ const Contact = () => {
               {/* Copiar email */}
               <button
                 onClick={copyEmail}
-                className="p-2 rounded-full bg-slate-700 hover:bg-slate-600 transition flex items-center"
+                className="p-2 rounded-full bg-slate-700 hover:scale-110 hover:bg-slate-600 transition duration-300 ease-in-out flex items-center"
               >
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
