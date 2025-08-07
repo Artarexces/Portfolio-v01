@@ -86,7 +86,7 @@ const Contact = () => {
                 className='w-full py-2 px-4 border border-slate-700 rounded-md text-gray-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:animate-pulse' 
                 />
 
-                <button type='submit' className='w-full py-2 px-4 border border-slate-700 bg-sky-700 hover:bg-sky-600 hover:animate-pulse transition duration-300 ease-in-out rounded-md'>Enviar</button>
+                <button type='submit' className='w-full py-2 px-4 border cursor-pointer border-slate-700 bg-sky-700 hover:bg-sky-600 hover:animate-pulse transition duration-300 ease-in-out rounded-md'>Enviar</button>
             </form>
             </div>
             {/* Redes */}
@@ -123,7 +123,7 @@ const Contact = () => {
               {/* Copiar email */}
               <button
                 onClick={copyEmail}
-                className="p-2 rounded-full bg-slate-700 hover:scale-110 hover:bg-slate-600 transition duration-300 ease-in-out flex items-center"
+                className="p-2 rounded-full bg-slate-700 hover:scale-110 cursor-pointer hover:bg-slate-600 transition duration-300 ease-in-out flex items-center"
               >
                 <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"

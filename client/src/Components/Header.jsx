@@ -31,8 +31,8 @@ const Header = () => {
     }, [subIndex, isDeleting])
 
     return (
-        <header className='mt-20 md:mt-30 mb-20'>
-            <div id='about' className='ml-8 sm:ml-12 md:ml-15'>
+        <header className='mt-20 md:mt-30 mb-20 lg:mt-35'>
+            <div id='about' className='ml-8 sm:ml-12 md:ml-15 lg:ml-50'>
                 <h1 className='text-4xl sm:text-xl md:text-3xl font-bold mb-2'>Hola, soy Martin 👋</h1>
                 <h2 className='text-4xl sm:text-xl md:text-3xl font-semibold mb-4'>
                     Desarrollador{" "}
