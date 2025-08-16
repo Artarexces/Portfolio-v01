@@ -1,9 +1,10 @@
-import Navbar from "../src/Components/Navbar"
-import Header from "../src/Components/Header"
-import Skills from "../src/Components/Skills"
-import Projects from "../src/Components/Projects"
-import Contact from "../src/Components/Contact"
-import Footer from "../src/Components/Footer"
+import Navbar from "@/Components/Navbar"
+import Header from "@/Components/Header"
+// import Avatar from "@/Components/Avatar"
+import Skills from "@/Components/Skills"
+import Projects from "@/Components/Projects"
+import Contact from "@/Components/Contact"
+import Footer from "@/Components/Footer"
 
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
     <div className="bg-slate-900">
       <Navbar />
       <Header />
+      {/* <Avatar /> */}
       <Skills />
       <Projects />
       <Contact />

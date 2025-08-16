@@ -33,14 +33,14 @@ const Header = () => {
     return (
         <header className='mt-20 md:mt-30 mb-20 lg:mt-35'>
             <div id='about' className='ml-8 sm:ml-12 md:ml-15 lg:ml-50'>
-                <h1 className='text-4xl sm:text-xl md:text-3xl font-bold mb-2'>Hola, soy Martin 👋</h1>
-                <h2 className='text-4xl sm:text-xl md:text-3xl font-semibold mb-4'>
+                <h1 className='text-4xl sm:text-xl md:text-3xl lg:text-4xl font-bold mb-2'>Hola, soy Martin 👋</h1>
+                <h2 className='text-4xl sm:text-xl md:text-3xl lg:text-4xl font-semibold mb-4'>
                     Desarrollador{" "}
                     <span className='text-sky-400'>
                         {text}
                     </span>
                 </h2>
-                <p className='text-base sm:text-sm md:text-sm leading-relaxed max-w-xl'>
+                <p className='text-base sm:text-sm md:text-sm lg:text-base leading-relaxed max-w-3xl'>
                     Soy un entusiasta del desarrollo web con experiencia en React.JS como también en Python(Django), Node.js(Express) y manejo de base de datos SQL y NoSql. Actualmente me encuentro incursionando en el desarrollo mobile con React Native.
                 </p>
             </div>
