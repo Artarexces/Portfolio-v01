@@ -34,8 +34,8 @@ const AvatarDraggeable = () => {
     return (
         <div 
         ref={avatarRef}
-        className='absolute right-80 top-15 cursor-grab select-none'>
-            <img src={avatare} alt="Avatar" className='w-70 h-96 drop-shadow-lg' />
+        className='hidden md:block absolute right-80 top-15 cursor-grab select-none'>
+            <img src={avatare} alt="Avatar" className='w-70 h-96 lg:w-42 lg:h-58 md:w-36 md:h-48 drop-shadow-lg' />
         </div>
     )   
 }
