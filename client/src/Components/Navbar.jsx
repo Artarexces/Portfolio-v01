@@ -17,10 +17,9 @@ const Navbar = () => {
                     <li><a href="#projects" className='font-bold hover:text-cyan-200 transition'>Projects</a></li>
                     <li><a href="#contact" className='font-bold hover:text-cyan-200 transition'>Contact</a></li>
                 </ul>
-            <div className='sm:hidden'>
-                <button onClick={toggleMenu} className='text-white'>
+            <div className='sm:hidden right-4 absolute top-2'>
+                <button onClick={toggleMenu} className='text-white text-2xl'>
                     {isOpen ? 'X' : '☰'}
-
                 </button>
             </div>
         </div>
