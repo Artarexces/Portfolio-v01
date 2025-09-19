@@ -2,6 +2,7 @@ import React from 'react'
 import {FaGithub} from "react-icons/fa"
 import { VscVmConnect } from "react-icons/vsc";
 import portfoliov1 from "./assets/portfoliov1.png"
+import portfoliov2 from "./assets/portfoliov2.png"
 import foodRecipe from "./assets/foodRecipe.png"
 import todo from "./assets/todo.png"
 import cloudy from "./assets/cloudy.jpg"
@@ -10,7 +11,7 @@ import pomi from "./assets/pomi.png"
 const projectData = [
     {
         title: "Mi portfolio",
-        image: portfoliov1,
+        image: portfoliov2,
         description: "Este es el portfolio mostrado actualmente. Un projecto desarollado con  React.JS, express.js y Tailwind CSS.",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -60,12 +61,11 @@ const projectData = [
         image: pomi,
         description: "Una app de estudio en la cual utiliza el metodo pomodoro mediante una interfaz sencilla, tambien version app-mobile.",
         techs: [
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
         ],
-        demoLink: "#",
+        demoLink: "https://pom-s.vercel.app/",
         codeLink: "https://github.com/Artarexces/Pom's"
     },
     {
