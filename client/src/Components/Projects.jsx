@@ -12,7 +12,7 @@ const projectData = [
     {
         title: "Mi portfolio",
         image: portfoliov2,
-        description: "Este es el portfolio mostrado actualmente. Un projecto desarollado con  React.JS, express.js y Tailwind CSS.",
+        description: "Este es el portfolio mostrado actualmente. Un projecto en desarrollo con React.JS, express.js y Tailwind CSS.",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
@@ -47,11 +47,11 @@ const projectData = [
     {
         title: "Cloudy",
         image: cloudy,
-        description: "Una app de clima hecha con React.js y Python Django en donde aprendi a utilizar Tailwind CSS y GSAP.",
+        description: "Una app de clima hecha con React.js y express en donde aprendi a utilizar Tailwind CSS y GSAP.",
         techs: [
             "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
         ],
         demoLink: "#",
         codeLink: "https://github.com/Artarexces/Cloudy"
